@@ -11,8 +11,8 @@ Solution
 1. Patient can talk about their illness and get the
 required medicine’s prescription.
 2. Patient can know their BMI
-3.Chatbot will provide proper prescription of all your illness
-4 Multiple disease analysis like diabetes
-5 ) They can maintain their profie and record past history
+3. Chatbot will provide proper prescription of all your illness
+4. Multiple disease analysis like diabetes
+5. They can maintain their profie and record past history
 related to health
 
