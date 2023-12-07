@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MEDiTECH</title>
-  <link rel="icon" href="logo.jpg">
+  <link rel="icon" href="logo-modified.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -24,11 +24,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Home</a>
+            <a class="nav-link " aria-current="page" href="home.html">Home</a>
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" style="font-weight: bolder;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu">
@@ -52,7 +52,7 @@
           </a>
           <ul class="dropdown-menu text-small shadow">
             <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
@@ -82,7 +82,7 @@
   </nav>
 
 
-  <form class="row g-3">
+  <form class="row g-1" style="margin-left:20px; margin-right: 20px; margin-top: 20px;">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Age:</label>
       <input type="number" class="form-control" id="inputEmail4">
@@ -90,16 +90,16 @@
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Gender:</label>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">MALE</label>
+        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1" name="a1">
+        <label class="form-check-label" for="inlineCheckbox1" >MALE</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">FEMALE</label>
+        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option2" name="a1">
+        <label class="form-check-label" for="inlineCheckbox1">FEMALE</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
-        <label class="form-check-label" for="inlineCheckbox3">OTHER</label>
+        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option3" name="a1" >
+        <label class="form-check-label" for="inlineCheckbox1">OTHER</label>
       </div>
     </div>
     <div class="col-md-6">
@@ -218,27 +218,28 @@
     crossorigin="anonymous"></script>
     <script src="BMI.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with Virtual Assistant",
-      "botConversationDescription": "Healthcare Chatbot",
-      "botId": "05dce763-75e8-4bd9-8305-b59ad7ce3194",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "05dce763-75e8-4bd9-8305-b59ad7ce3194",
-      "webhookId": "55a628ef-0b19-46fb-89ed-d6344b98b062",
-      "lazySocket": true,
-      "themeName": "prism",
-      "botName": "Virtual Assistant",
-      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RVT2gEfme1oZmBlLYnSJQMu4NWZS_JX5Pw&usqp=CAU",
-      "stylesheet": "https://webchat-styler-css.botpress.app/prod/2a2289ee-51e3-4eaa-ad2e-31e8c844a2f9/v59974/style.css",
-      "frontendVersion": "v1",
-      "useSessionStorage": true,
-      "enableConversationDeletion": true,
-      "theme": "prism",
-      "themeColor": "#2563eb"
-  });
-</script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with Virtual Assistant",
+          "botConversationDescription": "Healthcare Chatbot",
+          "botId": "05dce763-75e8-4bd9-8305-b59ad7ce3194",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "05dce763-75e8-4bd9-8305-b59ad7ce3194",
+          "webhookId": "55a628ef-0b19-46fb-89ed-d6344b98b062",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "Virtual Assistant",
+          "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RVT2gEfme1oZmBlLYnSJQMu4NWZS_JX5Pw&usqp=CAU",
+          "stylesheet": "https://webchat-styler-css.botpress.app/prod/2a2289ee-51e3-4eaa-ad2e-31e8c844a2f9/v59974/style.css",
+          "frontendVersion": "v1",
+          "useSessionStorage": true,
+          "enableConversationDeletion": true,
+          "theme": "prism",
+          "themeColor": "#2563eb"
+      });
+    </script>
 </body>
 
 </html>
